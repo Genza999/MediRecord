@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCCCCC"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mediRecord.mediRecord.mediRecord.mediRecord.policyChecker"
+    tools:showIn="@layout/activity_policy_checker">
+
+    <RelativeLayout android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+
+        <EditText
+            android:id="@+id/patientNo"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/policy_maker"
+            android:layout_marginTop="-50dp"
+            android:layout_marginStart="90dp"
+            android:hint="Patient Number"
+            android:textAlignment="center"
+            />
+
+        <Button android:id="@+id/policy_maker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="View Patient" />
+
+        <Button android:id="@+id/new_patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-50dp"
+            android:layout_marginStart="135dp"
+            android:layout_alignBottom="@+id/policy_maker"
+            android:text="New Patient"/>
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
